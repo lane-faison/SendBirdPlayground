@@ -1,0 +1,16 @@
+PODS:
+  - SendBirdSDK (3.0.125)
+
+DEPENDENCIES:
+  - SendBirdSDK
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SendBirdSDK
+
+SPEC CHECKSUMS:
+  SendBirdSDK: e037bb97dac862833d5dd89248c772c6ae69e42b
+
+PODFILE CHECKSUM: 48cfa27546f90345760ccaa45efbd19153a6f024
+
+COCOAPODS: 1.5.3

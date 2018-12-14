@@ -1,0 +1,6 @@
+framework module Pods_SendBirdPlayground {
+  umbrella header "Pods-SendBirdPlayground-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -12,6 +12,7 @@
 		5073DEE221C46B6100275ED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5073DEE021C46B6100275ED7 /* Main.storyboard */; };
 		5073DEE421C46B6200275ED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5073DEE321C46B6200275ED7 /* Assets.xcassets */; };
 		5073DEE721C46B6200275ED7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5073DEE521C46B6200275ED7 /* LaunchScreen.storyboard */; };
+		AF496D4CC8DAE95B0BD105D3 /* Pods_SendBirdPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA72CA23C8C869D9E9469F56 /* Pods_SendBirdPlayground.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		5073DEE321C46B6200275ED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5073DEE621C46B6200275ED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5073DEE821C46B6200275ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61F966CC8192B341D1863544 /* Pods-SendBirdPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendBirdPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-SendBirdPlayground/Pods-SendBirdPlayground.release.xcconfig"; sourceTree = "<group>"; };
+		AA72CA23C8C869D9E9469F56 /* Pods_SendBirdPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SendBirdPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDEFB9120208C2AD35F3FB94 /* Pods-SendBirdPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendBirdPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SendBirdPlayground/Pods-SendBirdPlayground.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF496D4CC8DAE95B0BD105D3 /* Pods_SendBirdPlayground.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				5073DEDB21C46B6100275ED7 /* SendBirdPlayground */,
 				5073DEDA21C46B6100275ED7 /* Products */,
+				B9DA6EBC5D7AAF86F2970F10 /* Pods */,
+				79C8D16523B50AA4134054B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = SendBirdPlayground;
 			sourceTree = "<group>";
 		};
+		79C8D16523B50AA4134054B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA72CA23C8C869D9E9469F56 /* Pods_SendBirdPlayground.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9DA6EBC5D7AAF86F2970F10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDEFB9120208C2AD35F3FB94 /* Pods-SendBirdPlayground.debug.xcconfig */,
+				61F966CC8192B341D1863544 /* Pods-SendBirdPlayground.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5073DEEB21C46B6200275ED7 /* Build configuration list for PBXNativeTarget "SendBirdPlayground" */;
 			buildPhases = (
+				793D59095CBFF488912329D8 /* [CP] Check Pods Manifest.lock */,
 				5073DED521C46B6100275ED7 /* Sources */,
 				5073DED621C46B6100275ED7 /* Frameworks */,
 				5073DED721C46B6100275ED7 /* Resources */,
+				18E5BC65DC84DFE9BE062F35 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18E5BC65DC84DFE9BE062F35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SendBirdPlayground/Pods-SendBirdPlayground-frameworks.sh",
+				"${PODS_ROOT}/SendBirdSDK/SendBirdSDK.framework",
+				"${PODS_ROOT}/SendBirdSDK/SendBirdSDK.framework.dSYM",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SendBirdSDK.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/SendBirdSDK.framework.dSYM",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SendBirdPlayground/Pods-SendBirdPlayground-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		793D59095CBFF488912329D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SendBirdPlayground-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5073DED521C46B6100275ED7 /* Sources */ = {
@@ -280,6 +347,7 @@
 		};
 		5073DEEC21C46B6200275ED7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDEFB9120208C2AD35F3FB94 /* Pods-SendBirdPlayground.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +366,7 @@
 		};
 		5073DEED21C46B6200275ED7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61F966CC8192B341D1863544 /* Pods-SendBirdPlayground.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
